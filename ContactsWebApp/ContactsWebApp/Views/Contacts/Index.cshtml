@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ContactsWebApp.Models.Contact>
+
+@{
+    ViewData["title"] = "Contacts";
+}
+
+<h2>@ViewData["title"]</h2>
+
+<div class="jumbotron">
+    <p>
+        <a id="btnCreateNew" asp-action="Create" class="btn btn-default dark">Add new contact</a>
+    </p>
+
+    <table id="ContactsTable" class="table">
+        <thead>
+            <tr>
+                <th>@Html.ActionLink("ID", "Index", new { sort = ViewBag.IDSortParm })</th>
+                <th>@Html.ActionLink("Name", "Index", new { sort = ViewBag.NameSortParm })</th>
+                <th>@Html.ActionLink("Comment", "Index", new { sort = ViewBag.CommentSortParm })</th>
+                <th>@Html.ActionLink("Cell", "Index", new { sort = ViewBag.CellSortParm })</th>
+                <th>@Html.ActionLink("Group", "Index", new { sort = ViewBag.GroupSortParm })</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td id="ID_@item.ID">@Html.DisplayFor(modelItem => item.ID)</td>
+                <td id="Name_@item.ID">@Html.DisplayFor(modelItem => item.Name)</td>
+                <td id="Comment_@item.ID">@Html.DisplayFor(modelItem => item.Comment)</td>
+                <td id="Cell_@item.ID">@Html.DisplayFor(modelItem => item.Cell)</td>
+                <td id="Group_@item.ID">@Html.DisplayFor(modelItem => item.Group)</td>
+                <td>
+                    <a id="btnEdit_@item.ID" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a id="btnDelete_@item.ID" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

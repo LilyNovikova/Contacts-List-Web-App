@@ -1,0 +1,16 @@
+﻿{
+  "test": {
+    "id": 1,
+    "name": "Test",
+    "comment": "test",
+    "cell": "+00000000000",
+    "group": "Work"
+  },
+  "edited": {
+    "id": 2,
+    "name": "Edited",
+    "comment": "edited",
+    "cell": "+12223334444",
+    "group": "Friends"
+  }
+}
