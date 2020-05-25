@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #afb2cb;
+    color: #202020;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+input {
+    color: #000;
+}
+
+select {
+    color: #000;
+}
+
+.api td, th {
+    padding-right: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.jumbotron {
+    color: #000;
+}
+
+.dark {
+    background-color: #202020;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.backToList {
+    color: #202020;
+}
+
+h2 {
+    text-align: center;
+}
