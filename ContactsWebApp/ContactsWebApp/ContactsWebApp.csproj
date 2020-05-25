@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>http://simple-web-app-mvc-dotnet.azurewebsites.net/</PackageProjectUrl>
     <Version>1.0.1</Version>
     <AssemblyName>ContactsWebApp</AssemblyName>
     <RootNamespace>ContactsWebApp</RootNamespace>
